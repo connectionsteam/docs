@@ -30,14 +30,14 @@
   ],
   "anchors": [
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://mintlify.com/community"
-    },
-    {
       "name": "Website",
       "icon": "globe",
       "url": "https://connections.squareweb.app"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/DSCvhYWatd"
     }
   ],
   "navigation": [
