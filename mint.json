@@ -70,7 +70,11 @@
                 "commands/general/help",
                 "commands/general/commands",
                 "commands/general/invite",
-                "commands/general/ping"
+                "commands/general/ping",
+                "commands/general/delete-message",
+                "commands/general/edit-message",
+                "commands/general/rank",
+                "commands/general/translate-message"
               ]
             },
             {
