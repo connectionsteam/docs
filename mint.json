@@ -71,10 +71,10 @@
                 "commands/general/commands",
                 "commands/general/invite",
                 "commands/general/ping",
-                "commands/general/delete_message",
                 "commands/general/edit-message",
                 "commands/general/rank",
-                "commands/general/translate-message"
+                "commands/general/translate-message",
+                "commands/general/oi"
               ]
             },
             {
