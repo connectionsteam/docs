@@ -92,7 +92,7 @@
             },
             {
               "group": "Config",
-              "pages": ["commands/config/connections.mdx"]
+              "pages": ["commands/config/connections"]
             }
           ]
         }
