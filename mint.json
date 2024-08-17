@@ -1,71 +1,74 @@
 {
-    "$schema": "https://mintlify.com/schema.json",
-    "name": "Connections",
-    "favicon": "/favicon.svg",
-    "colors": {
-        "primary": "#262626",
-        "light": "#d1d1d1",
-        "dark": "#171717",
-        "background": {},
-        "anchors": {
-            "from": "#171717",
-            "to": "#262626"
-        }
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Connections",
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#262626",
+    "light": "#d1d1d1",
+    "dark": "#171717",
+    "background": {},
+    "anchors": {
+      "from": "#171717",
+      "to": "#262626"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:connectionsteamofficial@gmail.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://connections.squareweb.app/dashboard"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://mintlify.com/community"
     },
-    "topbarLinks": [
+    {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://connections.squareweb.app"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": [
         {
-            "name": "Support",
-            "url": "mailto:connectionsteamofficial@gmail.com"
-        }
-    ],
-    "topbarCtaButton": {
-        "name": "Dashboard",
-        "url": "https://connections.squareweb.app/dashboard"
-    },
-    "tabs": [
+          "group": "Home",
+          "icon": "house",
+          "pages": [
+            "home/introduction",
+            "home/what-is-connections",
+            "home/features"
+          ]
+        },
+        "FAQs",
         {
-            "name": "API Reference",
-            "url": "api-reference"
-        }
-    ],
-    "anchors": [
-        {
-            "name": "Community",
-            "icon": "discord",
-            "url": "https://mintlify.com/community"
+          "group": "Changelogs",
+          "icon": "clock",
+          "pages": ["changelogs/v1.0.0"]
         },
         {
-            "name": "Website",
-            "icon": "globe",
-            "url": "https://connections.squareweb.app"
+          "group": "Commands",
+          "icon": "bars",
+          "pages": ["commands/general/inbox"]
         }
-    ],
-    "navigation": [
-        {
-            "group": "Introduction",
-            "pages": [
-                {
-                    "group": "Home",
-                    "icon": "house",
-                    "pages": [
-                        "home/introduction",
-                        "home/what-is-connections",
-                        "home/features"
-                    ]
-                },
-                "FAQs",
-                {
-                    "group": "Changelogs",
-                    "icon": "clock",
-                    "pages": [
-                        "changelogs/v1.0.0"
-                    ]
-                }
-            ]
-        }
-    ],
-    "footerSocials": {
-        "github": "https://github.com/connectionsworkspace",
-        "discord": "ttps://discord.gg/DSCvhYWatd"
+      ]
     }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/connectionsworkspace",
+    "discord": "ttps://discord.gg/DSCvhYWatd"
+  }
 }
