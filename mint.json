@@ -62,7 +62,25 @@
         {
           "group": "Commands",
           "icon": "bars",
-          "pages": ["commands/general/inbox"]
+          "pages": [
+            {
+              "group": "General",
+              "pages": ["commands/general/inbox"]
+            },
+            {
+              "group": "Moderation",
+              "pages": [
+                "commands/moderation/backup",
+                "commands/moderation/ban",
+                "commands/moderation/cases",
+                "commands/moderation/lock",
+                "commands/moderation/notes",
+                "commands/moderation/purge",
+                "commands/moderation/timeout",
+                "commands/moderation/unban"
+              ]
+            }
+          ]
         }
       ]
     }

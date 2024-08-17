@@ -1,0 +1,57 @@
+---
+title: "Timeout"
+duration: "Add or remove a timeout in some user in a connection channel, so the server will not receive messages from this user until the timeout ends"
+---
+
+# Command Syntax
+
+`/timeout remove !:connection !:user :reason`
+`/timeout add !:connection !:user !:duration :reason`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+| Command           | Example                                                                                      | Desc                                                                           |
+| ----------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| `/timeout remove` | `/timeout remove` !:connection gameplay !:user spyei                                         | Removes the timeout from `spyei` in the connection `gameplay`                  |
+| `/timeout add`    | `/timeout add` !:connection gameplay !:user patu !:duration 1d !:reason Too good in terraria | Adds timeout in `patu` with 1d duration with the reason "Too good in terraria" |
+
+## Options
+
+All options that are listen in the command syntax will be included and explained here.
+
+<CardGroup cols={2}>
+  <Card title="Connection">
+    Name of the connection you want to add or remove timeout in this user
+  </Card>
+  <Card title="User">
+    The mention, id or username of the user that you want add or remove the
+    timeout
+  </Card>
+  <Card title="Duration">
+    Duration of the timeout, in the 5s format, so 5s will be 5 seconds. The
+    timeout will be removed automatically after it expires
+  </Card>
+  <Card title="Reason">
+    Adds a reason when timeouting or removing it from a user, e.g. "Toddy is too
+    sexy to play Standoff with me"
+  </Card>
+</CardGroup>
+
+## Can't timeout
+
+Targets you can't timeout are:
+
+- Bots
+- Any person with trusted admin or physical owner
+
+## Logs
+
+<Info>
+  When you add/remove timeout to a user, Connections will automatically log the
+  timeout in the logs channel
+</Info>
+<Warning>This command does not have a prefix version</Warning>

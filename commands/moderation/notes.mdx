@@ -1,0 +1,61 @@
+---
+title: "Notes"
+description: "This command allows you to add, remove or purge notes in some user that is using a connection channel"
+---
+
+# Command Syntax
+
+`/notes add !:user !:txt !:connection`
+`/notes remove !:id :reason`
+`/notes purge :moderator :purge`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+| Command         | Example                                                              | Desc                                                 |
+| --------------- | -------------------------------------------------------------------- | ---------------------------------------------------- |
+| `/notes add`    | `/notes add` !user: spyei !txt: Too hot for this connection!: global | Adds a note to Spyei in the connection `global`      |
+| `/notes remove` | `/notes remove` :id 19160aeb3d4                                      | Remove the note with ID `19160aeb3d4`                |
+| `/notes purge`  | `/notes purge` :moderator unnreaal                                   | Purge all notes that the moderator is the `unnreaal` |
+
+## Options
+
+All options that are listen in the command syntax will be included and explained here.
+
+<CardGroup cols={2}>
+  <Card title="User">The user that you want to add or remove the note</Card>
+  <Card title="txt">
+    The full message that you want to add in the note (Min 5, Max 500)
+  </Card>
+  <Card title="Connection">
+    Name of the connection that you want to add the note to the user
+  </Card>
+  <Card title="ID">
+    The unique ID of the note that you want to remove, e.g. `19160aeb3d4`
+  </Card>
+  <Card title="Reason">
+    The reason for removing the note (only included in the `/notes remove`
+    command)
+  </Card>
+  <Card title="Moderator">
+    Purge the notes that this moderator added before
+  </Card>
+</CardGroup>
+
+## Can't add note in
+
+Targets you can't add note are:
+
+- Bots
+- Any person with trusted admin or physical owner
+
+## Logs
+
+<Info>
+  When you add/remove a note to a user, Connections will automatically log the note in
+  the logs channel
+</Info>
+<Warning>This command does not have a prefix version</Warning>

@@ -1,0 +1,52 @@
+---
+title: "Purge"
+description: "One of the best commands of the Connections, with this command you will be able to delete any message in any connection with any filter you want"
+---
+
+## Command Syntax
+
+`/purge !:limit :connection :type :input :frozen`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+## Options
+
+<CardGroup cols={2}>
+  <Card title="Limit">
+    This is the number of messages that you want to purge in the connection, the
+    maximum is 100 and the minimum is 2
+  </Card>
+  <Card title="Connection">
+    The connection option is in which connection you want to purge the messages
+    from, but why is this option optional? Connections will try to get the
+    connection of the current channel is it's not provided, otherwise
+    Connections will use the connection you provided
+  </Card>
+  <Card title="type">
+    This is the most powerful option in this command, with this you will filter
+    the messages you want easily.
+
+    ![Something](/public/purge-types)
+
+  </Card>
+  <Card title="Input">
+    This option is required for certain types
+    like when we want to purge messages from a user, so we need to pass the user that we want to purge in the input option
+  </Card>
+  <Card title="Frozen Messages">
+    This option tells Connections whether Connections should ignore frozen messages or delete them as well.
+
+    See about frozen messages in the [features](/home/features.mdx) page
+
+  </Card>
+</CardGroup>
+
+<Info>
+  When you use purge, Connections will automatically log the purge in the logs
+  channel
+</Info>
+<Warning>This command does not have a prefix version</Warning>

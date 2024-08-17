@@ -1,0 +1,46 @@
+---
+title: "Lock"
+description: "Locks or unlock connection channel(s) very quickly"
+---
+
+# Command Syntax
+
+`/lock connection add !:name :hide`
+`/lock connection remove !:name`
+`/lock connections add`
+`/lock connections remove`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+| Command                    | Example                                 | Desc                                                                                                                       |
+| -------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --- |
+| `/lock connection add`     | `/lock connection add` !:name standoff  | Locks the connected connection `standoff` in your server, so people won't be able to send/receive messages in this channel |
+| `/lock connection remove`  | `/lock connection remove` !:name tinder | Removes the lock of the connected connection `tinder`                                                                      |
+| `/lock connections add`    | `/lock connections add`                 | Locks ALL connected connections in your server (Yeah, ALL)                                                                 |     |
+| `/lock connections remove` | `/lock connections remove`              | Removes the lock of ALL connected connections that is locked in your server                                                |     |
+
+## Options
+
+All options that are listen in the command syntax will be included and explained here.
+
+<CardGroup cols={2}>
+  <Card title="Name">
+    The name of the connected connection that you want to add or remove the lock
+    from
+  </Card>
+  <Card title="Hide">
+    Whether Connections should hide the channel that the connection is connected
+  </Card>
+</CardGroup>
+
+## Logs
+
+<Info>
+  When you add/remove lock in a connection, Connections will automatically log
+  the action
+</Info>
+<Warning>This command does not have a prefix version</Warning>

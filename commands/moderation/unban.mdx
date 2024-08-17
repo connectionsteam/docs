@@ -1,0 +1,41 @@
+---
+title: "Unban"
+description: "Lift the ban of a user or a server that you banned before"
+---
+
+# Command Syntax
+
+`/ban users remove !:connection !:user :reason`
+`/ban server remove !:connection !:server :reason`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+## Options
+
+All options that are listen in the command syntax will be included and explained here.
+
+<CardGroup cols={2}>
+  <Card title="Connection">
+    Tell Connections which connection it must lift the ban of the user or server
+  </Card>
+  <Card title="User or Server">
+    The target that you are unbanning, the server ID if it's the server option,
+    or the user mention/id if it's the user option
+  </Card>
+  <Card title="Reason">
+    The reason for unbanning the user or server. The mods will want to know why
+    you are banning this server or user, right?
+  </Card>
+</CardGroup>
+
+## Logs
+
+<Info>
+  When you unban a user, Connections will automatically log the unban in the
+  logs channel
+</Info>
+<Warning>This command does not have a prefix version</Warning>

@@ -1,0 +1,61 @@
+---
+title: "Ban"
+description: "Ban a user or a server in a connection channel in your server"
+---
+
+# Command Syntax
+
+`/ban users add !:connection !:user :reason :delete_messages`
+`/ban server add !:connection !:server :reason`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+## Options
+
+All options that are listen in the command syntax will be included and explained here.
+
+<CardGroup cols={2}>
+  <Card title="Connection">
+    Tell Connections which connection it must ban the user or the server
+  </Card>
+  <Card title="User or Server">
+    The target that you are banning, the server ID if it's the server option, or
+    the user mention/id if it's the user option
+  </Card>
+  <Card title="Reason">
+    The reason for banning the user or server. The mods will want to know why
+    you are banning this server or user, right?
+  </Card>
+  <Card title="delete_messages">
+    The number of messages to delete in the connection channel after banning the
+    user. Min 1 and Max 100
+  </Card>
+</CardGroup>
+
+## Can't ban
+
+Targets you can't ban are:
+
+- Bots
+- Your current server
+- Any person with trusted admin or physical owner
+
+<Tip>
+  You can use the user/message context menu to ban a user/server quickly
+</Tip>
+
+![Something](/public/ban-user-app.png)
+![Something](/public/ban-guild-app.png)
+
+## Logs
+
+<Info>
+  When you ban a user, Connections will automatically log the ban in the logs
+  channel
+</Info>
+<Warning>This command does not have a prefix version</Warning>
+

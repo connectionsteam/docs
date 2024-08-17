@@ -1,0 +1,32 @@
+---
+title: "Cases"
+description: "Cases command allow you to view cases or edit a specific one easily"
+---
+
+# Command Syntax
+
+`/cases edit !:case_id !:reason`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Permission
+
+Only trusted admins and the physical owner can run this command.
+
+## Options
+
+All options that are listen in the command syntax will be included and explained here.
+
+<CardGroup cols={2}>
+  <Card title="Case ID">
+    Case ID is the **unique** ID of the case that you want to edit or view. It's
+    generated randonly based on the timestamp that the case was created.
+
+    Assuming we want to edit the case with the ID `191605d14d7`, then we would use `/cases edit 191605d14d7 REASON`.
+
+    To view all cases of your server, you will need to go the the [dashboard](https://connections.squareweb.app/dashboard/guild/your_guild_id) of your server
+
+  </Card>
+</CardGroup>
+
+<Warning>This command does not have a prefix version</Warning>
