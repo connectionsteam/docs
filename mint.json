@@ -89,6 +89,10 @@
                 "commands/moderation/timeout",
                 "commands/moderation/unban"
               ]
+            },
+            {
+              "group": "Config",
+              "pages": ["commands/config/connections.mdx"]
             }
           ]
         }

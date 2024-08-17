@@ -1,0 +1,135 @@
+---
+title: "Connections"
+description: "Create, delete, edit, join or leave a connection in the fastest way possibly"
+icon: "circle"
+---
+
+<Card
+  title="Faster Setup"
+  icon="link"
+  href="https://connections.squareweb.app/dashboard"
+>
+  Connections offers an easier and more user-friendly way to manage your
+  connections through the
+  [dashboard](https://connections.squareweb.app/dashboard). Just click on this
+  card to be automatically redirected
+</Card>
+
+<Warning>This command/step is VERY important, do NOT skip this</Warning>
+
+# Command Syntax
+
+`/connections create !:name :channel :max_connections`
+`/connections delete !:name`
+`/connections edit !:name !:max_connections`
+`/connections join !:name :channel`
+`/connections leave !:name`
+
+<Warning>Parameters that start with "!" are **REQUIRED**</Warning>
+
+## Creating a connection
+
+`/connections create !:name :channel :max_connections`
+
+A connection is literally where everything starts or where everything originates,
+so nothing better than creating your own connection with your own customization, right?
+
+The name of your connection must be **unique** and in the maximum 25 chars, connections can **not** have the same name, the name is like an unique ID.
+
+Wow, do does this mean I can go around looking for any connection with some random name?
+Yeah, of course, but connections can be private, so you will need the invite to join in these connections.
+
+### Options
+
+<CardGroup cols={2}>
+    <Card title="Name">
+        The **unique** name of the connection that you want to create.
+
+        Read more about connection names in [creating a connection](#creaing-a-connection)
+    </Card>
+    <Card title="Channel">
+        Optional if you want to automatically connect in the connection after creating the connection.
+    </Card>
+    <Card title="Max Connections">
+        This is how Connections helps you prevent multiple unknown users from connecting to your connection and creating confusion.
+
+        Using this option, you tell Connections how many users/servers can connect to this connection,
+        so if you pass the value `10`, only `10` servers will be able to connect to this connection
+    </Card>
+
+</CardGroup>
+
+## Joining/Leaving a connection
+
+`/connections leave !:name`
+`/connections join !:name :channel`
+
+### Permission
+
+Only trusted admins and the physical owner can run this command.
+
+### Options
+
+<CardGroup cols={2}>
+    <Card title="Name">
+        The connection name you want to join/leave.
+
+        Note, to join private connections you will need to join via the [dashboard](https://connections.squareweb.app/dashboard) of your server
+    </Card>
+    <Card title="Channel">
+        This options is only available in the `/connections join` command.
+
+        The channel you want to use when joining in a new connection, if not provided,
+        Connections will create a channel automatically with the name of the connection you are connecting.
+    </Card>
+
+</CardGroup>
+
+<Info>
+  When you leave or join in a connection, Connections will automatically log
+  your action in the logs channel
+</Info>
+
+## Deleting/Editing a connection
+
+`/connections delete !:name`
+`/connections edit !:name !:max_connections`
+
+### Permission
+
+Only two kind of person can edit or delete a connection:
+
+<Steps>
+  <Step title="Creator">
+    The original creator, only this guy can **delete** the connection, but other
+    users can edit the connection (See the second part).
+  </Step>
+  <Step title="Members">
+    If your connection belongs to a team and there are other members in the
+    teams, the members will be able to **edit** the connection (can't delete).
+
+    So take care the members you put in the team that you connection is in.
+
+  </Step>
+</Steps>
+
+### Options
+
+<CardGroup cols={2}>
+  <Card title="Name">
+    The name of the connection you want to edit or delete.
+  </Card>
+  <Card title="Max Connections">
+    This option is used to determine how many servers can connect in this
+    connection (Min 2, Max 1000).
+  </Card>
+  <Card title="Others">
+    There are a lot of other options that you can edit in a connection, such as
+    tags, description, icon, whether the connection is private or not etc.
+
+    To edit them, you will need to use the [dashboard](https://connections.squareweb.app/dashboard) of your connection.
+
+  </Card>
+</CardGroup>
+
+<Warning>This command does not have a prefix version</Warning>
