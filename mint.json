@@ -74,7 +74,7 @@
                 "commands/general/edit-message",
                 "commands/general/rank",
                 "commands/general/translate-message",
-                "commands/general/oi"
+                "commands/general/delete-message"
               ]
             },
             {
