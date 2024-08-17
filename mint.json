@@ -65,7 +65,13 @@
           "pages": [
             {
               "group": "General",
-              "pages": ["commands/general/inbox"]
+              "pages": [
+                "commands/general/inbox",
+                "commands/general/help",
+                "commands/general/commands",
+                "commands/general/invite",
+                "commands/general/ping"
+              ]
             },
             {
               "group": "Moderation",
