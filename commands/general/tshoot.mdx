@@ -1,0 +1,25 @@
+---
+title: "Tshoot"
+description: "Fix issues in the connections of your server"
+icon: "circle"
+---
+
+# Command Syntax
+
+`c.tshoot`
+`c.tshoot webhook`
+
+<Card title="Aliases" horizontal={true}>
+  tshoot, debug
+</Card>
+
+<Frame caption="This command will fix @everyone role permission in all channels that has a connected connection">
+  <img src="/public/tshoot.png" />
+</Frame>
+
+## Webhook argument
+
+Runs a validation in all channels that has a connected connection and is using compact mode.
+Check if a webhook exists in the channel and it's usable by the Connections, if not, create one to use in the compact mode.
+
+<Warning>This command does not have a slash command version</Warning>
