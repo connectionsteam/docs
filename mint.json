@@ -74,7 +74,10 @@
                 "commands/general/edit-message",
                 "commands/general/rank",
                 "commands/general/translate-message",
-                "commands/general/delete-message"
+                "commands/general/delete-message",
+                "commands/general/premium",
+                "commands/general/tshoot",
+                "commands/general/vote"
               ]
             },
             {
