@@ -18,5 +18,5 @@ of a command or feature for Connections in the [support server](https://discord.
 - [Support Server](https://discord.gg/DSCvhYWatd)
 - [TOP.GG](https://top.gg/bot/1243234162077470802)
 - [TOS](https://connections.squareweb.app/tos)
-- [Privacy Policy](https://connections.squareweb.app/privacy-policy)
+- [Privacy Policy](https://connections.squareweb.app/privacy)
 - [Documentation](https://connections-b7efc2e5.mintlify.app/home/introduction)
